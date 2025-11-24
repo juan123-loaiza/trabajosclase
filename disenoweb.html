@@ -31,8 +31,8 @@
           <img src="img/imagen libro por poner.jpg" alt="Portada del libro seleccionado">
           <figcaption>Libro del mes</figcaption>
         </figure>
-        <p>📅 Fecha: 5 de diciembre, 18:00h<br>
-           📍 Lugar: Sede Vecinal Guanarteme</p>
+        <p> Fecha: 5 de diciembre, 18:00h<br>
+            Lugar: Sede Vecinal Guanarteme</p>
         <ul>
           <li>Bienvenida</li>
           <li>Debate sobre el libro</li>
@@ -82,4 +82,76 @@
         </tbody>
       </table>
     </section>
+<!-- Formulario -->
+    <section id="inscripcion">
+      <h3>Inscripción</h3>
+      <form action="https://ejemplo-tu-webhook.com/recibir" method="POST">
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="tel">Teléfono:</label>
+          <input type="tel" id="tel" name="tel">
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferencias</legend>
+          <label for="genero">Género literario preferido:</label>
+          <select id="genero" name="genero">
+            <option>Novela</option>
+            <option>Poesía</option>
+            <option>Ensayo</option>
+            <option>Ciencia ficción</option>
+          </select>
+
+          <p>Horario preferido:</p>
+          <label><input type="radio" name="horario" value="mañana"> Mañana</label>
+          <label><input type="radio" name="horario" value="tarde"> Tarde</label>
+
+          <p>Preferencias de contacto:</p>
+          <label><input type="checkbox" name="contacto" value="email"> Email</label>
+          <label><input type="checkbox" name="contacto" value="telefono"> Teléfono</label>
+        </fieldset>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+
+        <button type="submit">Enviar inscripción</button>
+      </form>
+    </section>
+    <!-- Aside -->
+    <aside id="normas">
+      <h3>Consejos y normas</h3>
+      <ul>
+        <li>Traer el libro leído</li>
+        <li>Respetar turnos de palabra</li>
+        <li>Proponer nuevos títulos</li>
+        <li>Participar activamente</li>
+      </ul>
+    </aside>
+
+    <!-- Política de privacidad -->
+    <section id="privacidad">
+      <h3>Política de privacidad</h3>
+      <p>El Club de Lectura Guanarteme garantiza la protección de los datos personales
+         conforme a la legislación vigente...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Club de Lectura Guanarteme</p>
+    <a href="#top">Volver arriba</a>
+    <p>Síguenos en:
+      <a href="https://facebook.com">Facebook</a> |
+      <a href="https://twitter.com">Twitter</a> |
+      <a href="https://instagram.com">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>
 
