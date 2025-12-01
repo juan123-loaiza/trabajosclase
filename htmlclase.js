@@ -1,1 +1,0 @@
-document.getElementById("quevedo").innerHTML = Date();
