@@ -8,12 +8,16 @@
 </head>
 <body>
 
-  <header>
+<div class="grid-container">
+
+  <header class="header">
     <h1>Club de Lectura Guanarteme</h1>
     <h2>"Leer nos une, compartir nos enriquece"</h2>
+
     <nav>
       <ul>
         <li><a href="#proxima">Próxima reunión</a></li>
+        <li><a href="#carrusel">Galería</a></li>
         <li><a href="#reseñas">Reseñas</a></li>
         <li><a href="#calendario">Calendario</a></li>
         <li><a href="#inscripcion">Inscripción</a></li>
@@ -22,17 +26,29 @@
       </ul>
     </nav>
   </header>
-   <main>
+
+  <aside class="left" id="normas">
+    <h3>Consejos y normas</h3>
+    <ul>
+      <li>Traer el libro leído</li>
+      <li>Respetar turnos de palabra</li>
+      <li>Proponer nuevos títulos</li>
+      <li>Participar activamente</li>
+    </ul>
+  </aside>
+
+  <main class="middle">
+
     <!-- Próxima reunión -->
     <section id="proxima">
       <h3>Próxima reunión</h3>
       <article>
         <figure>
-          <img src="imagenes/conquista_española_portada.jpg" alt="Portada del libro seleccionado" style="width: 20%;">
+          <img src="imagenes/conquista_española_portada.jpg" alt="Portada del libro seleccionado">
           <figcaption>Libro del mes</figcaption>
         </figure>
-        <p> Fecha: 5 de diciembre, 18:00h<br>
-            Lugar: Sede Vecinal Guanarteme</p>
+        <p>Fecha: 5 de diciembre, 18:00h<br>
+           Lugar: Sede Vecinal Guanarteme</p>
         <ul>
           <li>Bienvenida</li>
           <li>Debate sobre el libro</li>
@@ -41,7 +57,33 @@
         </ul>
       </article>
     </section>
-     <!-- Reseñas -->
+
+    <!-- Carrusel -->
+    <section id="carrusel" class="carrusel">
+      <h3>Galería del Club</h3>
+
+      <div class="slides">
+
+        <input type="radio" name="carrusel" id="slide1" checked>
+        <input type="radio" name="carrusel" id="slide2">
+        <input type="radio" name="carrusel" id="slide3">
+
+        <div class="imagenes">
+          <img src="imagenes/carrusel1.jpg" alt="Actividad del club 1">
+          <img src="imagenes/carrusel2.jpg" alt="Actividad del club 2">
+          <img src="imagenes/carrusel3.jpg" alt="Actividad del club 3">
+        </div>
+
+        <div class="controles">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Reseñas -->
     <section id="reseñas">
       <h3>Reseñas de libros anteriores</h3>
       <article>
@@ -53,7 +95,8 @@
         <p>Un homenaje a la literatura y a la ciudad de Barcelona...</p>
       </article>
     </section>
-     <!-- Calendario -->
+
+    <!-- Calendario -->
     <section id="calendario">
       <h3>Calendario de próximos eventos</h3>
       <table>
@@ -69,30 +112,31 @@
         </thead>
         <tbody>
           <tr>
-            <td><img src="imagenes/conquista_española_portada.jpg" alt="Portada del libro conquista española" style="width: 100%;"></td>
+            <td><img src="imagenes/conquista_española_portada.jpg" alt="Portada del libro conquista española"></td>
             <td>5 Dic</td>
-            <td>LA CONQUISTA ESPAÑOLA OLVIDADA </td>
+            <td>LA CONQUISTA ESPAÑOLA OLVIDADA</td>
             <td>Manuel Trillo</td>
             <td>Sede Vecinal</td>
           </tr>
           <tr>
-            <td><img src="imagenes/visigodos.jpg" alt="Portada del libro visigodos" style="width: 100%;"></td>
+            <td><img src="imagenes/visigodos.jpg" alt="Portada del libro visigodos"></td>
             <td>19 Dic</td>
             <td>Los visigodos, hijos de un dios furioso</td>
             <td>Jose Soto Chica</td>
             <td>Sede Vecinal</td>
           </tr>
           <tr>
-            <td><img src="imagenes/codigo.jpg" alt="Portada del libro codigo da vinci" style="width: 100%;"></td>
+            <td><img src="imagenes/codigo.jpg" alt="Portada del libro codigo da vinci"></td>
             <td>6 Ene</td>
-            <td>El codigo Da Vinci</td>
+            <td>El código Da Vinci</td>
             <td>Dan Brown</td>
             <td>Sede Vecinal</td>
           </tr>
         </tbody>
       </table>
     </section>
-<!-- Formulario -->
+
+    <!-- Formulario -->
     <section id="inscripcion">
       <h3>Inscripción</h3>
       <form action="https://webhook.site/86cf32d7-c9da-402b-a79b-b3387d938724" method="POST">
@@ -133,26 +177,16 @@
         <button type="submit">Enviar inscripción</button>
       </form>
     </section>
-    <!-- Aside -->
-    <aside id="normas">
-      <h3>Consejos y normas</h3>
-      <ul>
-        <li>Traer el libro leído</li>
-        <li>Respetar turnos de palabra</li>
-        <li>Proponer nuevos títulos</li>
-        <li>Participar activamente</li>
-      </ul>
-    </aside>
 
     <!-- Política de privacidad -->
     <section id="privacidad">
       <h3>Política de privacidad</h3>
-      <p>El Club de Lectura Guanarteme garantiza la protección de los datos personales
-         conforme a la legislación vigente...</p>
+      <p>El Club de Lectura Guanarteme garantiza la protección de los datos personales conforme a la legislación vigente...</p>
     </section>
+
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 Club de Lectura Guanarteme</p>
     <a href="#top">Volver arriba</a>
     <p>Síguenos en:
@@ -161,6 +195,8 @@
       <a href="https://instagram.com">Instagram</a>
     </p>
   </footer>
+
+</div>
 
 </body>
 </html>
