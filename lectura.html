@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Club de Lectura Guanarteme</title>
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="estilon.css">
 </head>
 <body>
 
@@ -17,7 +17,6 @@
     <nav>
       <ul>
         <li><a href="#proxima">Próxima reunión</a></li>
-        <li><a href="#carrusel">Galería</a></li>
         <li><a href="#reseñas">Reseñas</a></li>
         <li><a href="#calendario">Calendario</a></li>
         <li><a href="#inscripcion">Inscripción</a></li>
@@ -27,6 +26,7 @@
     </nav>
   </header>
 
+  <!-- ASIDE IZQUIERDO -->
   <aside class="left" id="normas">
     <h3>Consejos y normas</h3>
     <ul>
@@ -37,14 +37,14 @@
     </ul>
   </aside>
 
+  <!-- CONTENIDO PRINCIPAL -->
   <main class="middle">
 
-    <!-- Próxima reunión -->
     <section id="proxima">
       <h3>Próxima reunión</h3>
       <article>
         <figure>
-          <img src="imagenes/conquista_española_portada.jpg" alt="Portada del libro seleccionado">
+          <img src="imagenes/conquista_española_portada.jpg" alt="Portada del libro seleccionado" width="300">
           <figcaption>Libro del mes</figcaption>
         </figure>
         <p>Fecha: 5 de diciembre, 18:00h<br>
@@ -58,32 +58,6 @@
       </article>
     </section>
 
-    <!-- Carrusel -->
-    <section id="carrusel" class="carrusel">
-      <h3>Galería del Club</h3>
-
-      <div class="slides">
-
-        <input type="radio" name="carrusel" id="slide1" checked>
-        <input type="radio" name="carrusel" id="slide2">
-        <input type="radio" name="carrusel" id="slide3">
-
-        <div class="imagenes">
-          <img src="imagenes/carrusel1.jpg" alt="Actividad del club 1">
-          <img src="imagenes/carrusel2.jpg" alt="Actividad del club 2">
-          <img src="imagenes/carrusel3.jpg" alt="Actividad del club 3">
-        </div>
-
-        <div class="controles">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Reseñas -->
     <section id="reseñas">
       <h3>Reseñas de libros anteriores</h3>
       <article>
@@ -96,7 +70,6 @@
       </article>
     </section>
 
-    <!-- Calendario -->
     <section id="calendario">
       <h3>Calendario de próximos eventos</h3>
       <table>
@@ -126,7 +99,7 @@
             <td>Sede Vecinal</td>
           </tr>
           <tr>
-            <td><img src="imagenes/codigo.jpg" alt="Portada del libro codigo da vinci"></td>
+            <td><img src="imagenes/codigo.jpg" alt="Portada del libro código da vinci"></td>
             <td>6 Ene</td>
             <td>El código Da Vinci</td>
             <td>Dan Brown</td>
@@ -136,7 +109,6 @@
       </table>
     </section>
 
-    <!-- Formulario -->
     <section id="inscripcion">
       <h3>Inscripción</h3>
       <form action="https://webhook.site/86cf32d7-c9da-402b-a79b-b3387d938724" method="POST">
@@ -178,13 +150,47 @@
       </form>
     </section>
 
-    <!-- Política de privacidad -->
     <section id="privacidad">
       <h3>Política de privacidad</h3>
       <p>El Club de Lectura Guanarteme garantiza la protección de los datos personales conforme a la legislación vigente...</p>
     </section>
 
   </main>
+
+  <!-- CARRUSEL -->
+<!-- ASIDE DERECHO CON CARRUSEL -->
+<aside class="right">
+  <h3>Galería del Club</h3>
+
+  <div class="carousel-container">
+    <!-- Controles invisibles (Radios) -->
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+
+    <!-- Contenedor de las diapositivas -->
+    <div class="carousel-slides">
+      <div class="carousel-item">
+        <img src="imagenes/visigodos.jpg" alt="Libro Visigodos">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/codigo.jpg" alt="Libro Código Da Vinci">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/conquista_española_portada.jpg" alt="Libro Conquista Española">
+      </div>
+    </div>
+
+    <!-- Puntos de navegación (Dots) -->
+    <div class="carousel-dots">
+      <label for="slide1" class="dot"></label>
+      <label for="slide2" class="dot"></label>
+      <label for="slide3" class="dot"></label>
+    </div>
+  </div>
+</aside>
+
+
 
   <footer class="footer">
     <p>&copy; 2025 Club de Lectura Guanarteme</p>
