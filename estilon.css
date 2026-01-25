@@ -139,7 +139,7 @@ button:hover {
   background: #357ab8;
 }
 
-/* GALERÍA */
+
 .galeria {
   display: flex;
   flex-direction: row;
@@ -155,3 +155,6 @@ button:hover {
   object-fit: cover;
 }
 
+.abajo {
+  text-align: center;
+}
