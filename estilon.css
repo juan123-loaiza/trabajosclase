@@ -52,7 +52,7 @@ nav a:hover {
   background: #d9e3ec;
 }
 
-/* ASIDE IZQUIERDO */
+/* IZQUIERDA */
 .left {
   grid-area: left;
   background-color: #f5f7fa;
@@ -61,7 +61,7 @@ nav a:hover {
   border: 1px solid #d0d7de;
 }
 
-/* MAIN */
+/* MEDIO */
 .middle {
   grid-area: middle;
   background-color: #ffffff;
@@ -70,7 +70,7 @@ nav a:hover {
   border: 1px solid #d0d7de;
 }
 
-/* ASIDE DERECHO (CARRUSEL) */
+/* DERECHA */
 .right {
   grid-area: right;
   background-color: #f5f7fa;
@@ -137,5 +137,21 @@ button {
 
 button:hover {
   background: #357ab8;
+}
+
+/* GALERÍA */
+.galeria {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 12px;
+}
+
+.galeria img {
+  width: 32%;        
+  max-width: 150px;  
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+  object-fit: cover;
 }
 
